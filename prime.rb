@@ -3,6 +3,6 @@ def prime?(num)
   if array.any? { |n| num % n == 0}
     return false
   elsif array.none? { |n| num % n == 0 } 
-    return true
+    return false
   end
 end
