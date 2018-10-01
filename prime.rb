@@ -1,5 +1,7 @@
 def prime?(num)
   array = (2..(num-1)).to_a
-  array.each do |n|
-    num % n
+  if array.any? { |n| num % n == 0}
+    return false
+  else return true
+  end
 end
